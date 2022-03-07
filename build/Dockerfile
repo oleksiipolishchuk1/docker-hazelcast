@@ -1,13 +1,13 @@
 # Docker file for running hazelcast
 
-FROM openjdk:8-jre
+FROM openjdk:11-jre
 
 MAINTAINER Gagandeep Singh <gagan.goku@gmail.com>
 
 EXPOSE 5701
 
 
-ENV HZ_VERSION 3.8.3
+ENV HZ_VERSION 3.12.5
 ENV HZ_HOME /opt/hazelcast/
 RUN mkdir -p $HZ_HOME
 WORKDIR $HZ_HOME
